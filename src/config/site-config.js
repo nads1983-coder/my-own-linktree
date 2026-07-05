@@ -13,6 +13,12 @@ export const siteConfig = {
       featured: true
     },
     {
+      title: "Book Series",
+      description: "Explore Nadine Pierre's leadership book series.",
+      url: "https://amzn.eu/d/07A6gIM1",
+      featured: false
+    },
+    {
       title: "nadinepierre.com",
       description: "Personal website and main home base.",
       url: "https://nadinepierre.com",

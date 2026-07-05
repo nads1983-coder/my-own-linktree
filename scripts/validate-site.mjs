@@ -7,7 +7,12 @@ const requiredFiles = [
   "src/theme/theme.css",
   "src/styles.css",
   "public/nadine-pierre.png",
-  "public/favicon.svg"
+  "public/favicon.svg",
+  "public/apple-touch-icon.svg",
+  "public/og-image.svg",
+  "public/site.webmanifest",
+  "robots.txt",
+  "sitemap.xml"
 ];
 
 await Promise.all(requiredFiles.map((file) => access(file)));
@@ -17,6 +22,14 @@ const html = await readFile("index.html", "utf8");
 
 if (!html.includes("og:title") || !html.includes("twitter:card")) {
   throw new Error("SEO/Open Graph metadata is missing.");
+}
+
+if (!html.includes("https://app.nadinepierre.com/public/og-image.svg")) {
+  throw new Error("Open Graph image must use the public absolute URL.");
+}
+
+if (!html.includes('type="application/ld+json"')) {
+  throw new Error("Structured data JSON-LD is missing.");
 }
 
 if (!Array.isArray(config.siteConfig.websites) || config.siteConfig.websites.length < 1) {
