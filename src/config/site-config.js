@@ -47,24 +47,8 @@ export const siteConfig = {
     heading: "Connect",
     links: [
       {
-        label: "LinkedIn",
-        url: "https://www.linkedin.com/in/nadine-pierre-miller"
-      },
-      {
-        label: "YouTube",
-        url: "https://www.youtube.com/@LeadWithNadine"
-      },
-      {
-        label: "Instagram",
-        url: "https://www.instagram.com/leadwithnadine?igsh=bDMwa21lbTZmb2cx&utm_source=qr"
-      },
-      {
-        label: "Facebook",
-        url: "https://www.facebook.com/share/1cLoMxnwPx/?mibextid=wwXIfr"
-      },
-      {
-        label: "Email",
-        url: "mailto:hello@nadinepierre.com"
+        label: "Connect With Me",
+        url: "https://app.nadinepierre.com/"
       }
     ]
   }
