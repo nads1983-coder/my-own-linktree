@@ -6,7 +6,7 @@
   "rewrites": [
     {
       "source": "/go/:slug",
-      "destination": "/go/index.html?slug=:slug"
+      "destination": "/go?slug=:slug"
     }
   ]
 }
