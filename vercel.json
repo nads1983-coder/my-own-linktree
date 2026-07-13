@@ -2,5 +2,11 @@
   "buildCommand": "npm run build",
   "cleanUrls": true,
   "outputDirectory": ".",
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/go/:slug",
+      "destination": "/go/index.html?slug=:slug"
+    }
+  ]
 }

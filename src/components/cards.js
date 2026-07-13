@@ -7,13 +7,14 @@ const arrowIcon = `
 
 export function websiteCard(site, variant = "standard") {
   const url = new URL(site.url);
+  const href = site.shortPath ?? site.url;
   const cardLabel = site.ariaLabel ?? `${site.title}. ${site.description}`;
   const eventAttribute = site.analyticsEvent ? ` data-analytics-event="${site.analyticsEvent}"` : "";
   const label = site.label ? `<span class="website-card__label">${site.label}</span>` : "";
   const cta = site.cta ? `<span class="website-card__cta">${site.cta}</span>` : "";
 
   return `
-    <a class="website-card website-card--${variant}" href="${site.url}" target="_blank" rel="noopener noreferrer" aria-label="${cardLabel}"${eventAttribute}>
+    <a class="website-card website-card--${variant}" href="${href}" target="_blank" rel="noopener noreferrer" aria-label="${cardLabel}"${eventAttribute}>
       <span class="website-card__content">
         ${label}
         <span class="website-card__title">${site.title}</span>

@@ -10,6 +10,7 @@ export const siteConfig = {
       title: "LeadWithNadine.com",
       description: "Leadership insights, book and resources.",
       url: "https://leadwithnadine.com",
+      shortPath: "/go/lead",
       featured: true
     },
     {
@@ -18,6 +19,7 @@ export const siteConfig = {
       cta: "Explore the Course — £97",
       label: "New Course",
       url: "https://leadwithnadine.com/foundations",
+      shortPath: "/go/foundations",
       featured: true,
       analyticsEvent: "foundations_course_click",
       ariaLabel: "Lead With Nadine Foundations course, Explore the Course for £97"
@@ -26,30 +28,35 @@ export const siteConfig = {
       title: "Book Series",
       description: "Explore Nadine Pierre's leadership book series.",
       url: "https://amzn.eu/d/07A6gIM1",
+      shortPath: "/go/books",
       featured: false
     },
     {
       title: "nadinepierre.com",
       description: "Personal website and main home base.",
       url: "https://nadinepierre.com",
+      shortPath: "/go/home",
       featured: false
     },
     {
       title: "100securityprompts.com",
       description: "AI prompts for security professionals.",
       url: "https://100securityprompts.com",
+      shortPath: "/go/security",
       featured: false
     },
     {
       title: "getcontentos.co",
       description: "Content creation system and templates.",
       url: "https://getcontentos.co",
+      shortPath: "/go/contentos",
       featured: false
     },
     {
       title: "calmauthority.co",
       description: "Calm authority, confidence and communication resources for leaders.",
       url: "https://calmauthority.co",
+      shortPath: "/go/calm",
       featured: false
     }
   ],
@@ -58,19 +65,19 @@ export const siteConfig = {
     links: [
       {
         label: "LinkedIn",
-        url: "https://www.linkedin.com/in/nadine-pierre-miller"
+        url: "/go/linkedin"
       },
       {
         label: "YouTube",
-        url: "https://www.youtube.com/@LeadWithNadine"
+        url: "/go/youtube"
       },
       {
         label: "Instagram",
-        url: "https://www.instagram.com/leadwithnadine?igsh=bDMwa21lbTZmb2cx&utm_source=qr"
+        url: "/go/instagram"
       },
       {
         label: "Facebook",
-        url: "https://www.facebook.com/share/1cLoMxnwPx/?mibextid=wwXIfr"
+        url: "/go/facebook"
       },
       {
         label: "Email",
