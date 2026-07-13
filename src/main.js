@@ -1,8 +1,8 @@
 import { websiteCard } from "./components/cards.js";
 import { siteConfig } from "./config/site-config.js";
 
-const featuredSite = siteConfig.websites.find((site) => site.featured) ?? siteConfig.websites[0];
-const standardSites = siteConfig.websites.filter((site) => site !== featuredSite);
+const featuredSites = siteConfig.websites.filter((site) => site.featured);
+const standardSites = siteConfig.websites.filter((site) => !site.featured);
 const currentYear = new Date().getFullYear();
 
 document.querySelector("#app").innerHTML = `
@@ -21,7 +21,9 @@ document.querySelector("#app").innerHTML = `
       <div class="section-heading">
         <h2 id="featured-title">Featured</h2>
       </div>
-      ${websiteCard(featuredSite, "featured")}
+      <div class="featured-list">
+        ${featuredSites.map((site, index) => websiteCard(site, index === 0 ? "featured" : "course")).join("")}
+      </div>
     </section>
 
     <section class="directory-section" aria-labelledby="directory-title">
@@ -51,3 +53,12 @@ document.querySelector("#app").innerHTML = `
     <p>&copy; ${currentYear} ${siteConfig.copyrightName}. All rights reserved.</p>
   </footer>
 `;
+
+
+document.querySelectorAll("[data-analytics-event]").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (typeof window.plausible === "function") {
+      window.plausible(link.dataset.analyticsEvent);
+    }
+  });
+});

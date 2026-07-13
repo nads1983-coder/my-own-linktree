@@ -121,6 +121,11 @@ a {
   gap: 0.8rem;
 }
 
+.featured-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
 .website-card {
   align-items: center;
   background: rgba(255, 255, 255, 0.84);
@@ -168,9 +173,52 @@ a {
     var(--colour-brand);
 }
 
+.website-card--course {
+  background:
+    linear-gradient(135deg, rgba(18, 7, 29, 0.98), rgba(65, 25, 62, 0.96)),
+    var(--colour-brand-strong);
+  border: 1px solid rgba(201, 154, 59, 0.72);
+  box-shadow:
+    0 1.15rem 2.5rem rgba(33, 16, 47, 0.18),
+    inset 0 0 0 1px rgba(243, 223, 174, 0.12);
+  color: #ffffff;
+  min-height: 9.75rem;
+  overflow: hidden;
+  padding: 1.25rem;
+  position: relative;
+}
+
+.website-card--course::before {
+  background: linear-gradient(180deg, var(--colour-gold), var(--colour-gold-soft));
+  content: "";
+  inset: 0 auto 0 0;
+  position: absolute;
+  width: 0.35rem;
+}
+
+.website-card--course:hover,
+.website-card--course:focus-visible {
+  background:
+    linear-gradient(135deg, var(--colour-brand-strong), var(--colour-rose)),
+    var(--colour-brand);
+  border-color: var(--colour-gold);
+  box-shadow:
+    0 1.35rem 3.25rem rgba(33, 16, 47, 0.22),
+    inset 0 0 0 1px rgba(243, 223, 174, 0.18);
+}
+
 .website-card__content {
   display: grid;
   gap: 0.35rem;
+}
+
+.website-card__label {
+  color: var(--colour-gold-soft);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 .website-card__title {
@@ -190,6 +238,19 @@ a {
   color: rgba(255, 255, 255, 0.78);
 }
 
+.website-card--course .website-card__description {
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 42rem;
+}
+
+.website-card__cta {
+  color: #ffffff;
+  font-size: clamp(0.98rem, 4vw, 1.13rem);
+  font-weight: 900;
+  line-height: 1.25;
+  margin-top: 0.25rem;
+}
+
 .website-card__url {
   color: var(--colour-rose);
   font-size: 0.8rem;
@@ -200,6 +261,10 @@ a {
 }
 
 .website-card--featured .website-card__url {
+  color: var(--colour-gold-soft);
+}
+
+.website-card--course .website-card__url {
   color: var(--colour-gold-soft);
 }
 
@@ -217,6 +282,10 @@ a {
 }
 
 .website-card--featured .card-arrow {
+  color: var(--colour-gold-soft);
+}
+
+.website-card--course .card-arrow {
   color: var(--colour-gold-soft);
 }
 
@@ -283,6 +352,11 @@ a {
 
   .website-card--featured {
     min-height: 11rem;
+  }
+
+  .website-card--course {
+    min-height: 10.75rem;
+    padding: 1.45rem;
   }
 }
 

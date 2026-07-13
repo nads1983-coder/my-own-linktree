@@ -13,6 +13,16 @@ export const siteConfig = {
       featured: true
     },
     {
+      title: "Lead With Nadine Foundations",
+      description: "A practical leadership course for frontline supervisors and new managers.",
+      cta: "Explore the Course — £97",
+      label: "New Course",
+      url: "https://leadwithnadine.com/foundations",
+      featured: true,
+      analyticsEvent: "foundations_course_click",
+      ariaLabel: "Lead With Nadine Foundations course, Explore the Course for £97"
+    },
+    {
       title: "Book Series",
       description: "Explore Nadine Pierre's leadership book series.",
       url: "https://amzn.eu/d/07A6gIM1",
