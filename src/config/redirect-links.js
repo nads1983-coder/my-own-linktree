@@ -37,10 +37,10 @@ export const redirectLinks = {
     content: "content_os",
     eventName: "shortlink_contentos_click"
   },
-  calm: {
-    destination: "https://calmauthority.co",
-    content: "calm_authority",
-    eventName: "shortlink_calm_click"
+  businesssorted: {
+    destination: "https://businesssorted.uk",
+    content: "business_sorted",
+    eventName: "shortlink_businesssorted_click"
   },
   linkedin: {
     destination: "https://www.linkedin.com/in/nadine-pierre-miller",

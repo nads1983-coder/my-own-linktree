@@ -53,10 +53,10 @@ export const siteConfig = {
       featured: false
     },
     {
-      title: "calmauthority.co",
-      description: "Calm authority, confidence and communication resources for leaders.",
-      url: "https://calmauthority.co",
-      shortPath: "/go/calm",
+      title: "businesssorted.uk",
+      description: "Business systems, resources and support for small business owners.",
+      url: "https://businesssorted.uk",
+      shortPath: "/go/businesssorted",
       featured: false
     }
   ],
