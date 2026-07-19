@@ -8,8 +8,8 @@ export const utmDefaults = {
 
 export const redirectLinks = {
   lead: {
-    destination: "https://leadwithnadine.com",
-    content: "lead_with_nadine",
+    destination: "https://leadwithnadine.com/clarity",
+    content: "lead_with_nadine_clarity",
     eventName: "shortlink_lead_click"
   },
   foundations: {
@@ -33,8 +33,8 @@ export const redirectLinks = {
     eventName: "shortlink_security_click"
   },
   contentos: {
-    destination: "https://getcontentos.co",
-    content: "content_os",
+    destination: "https://getcontentos.co/founder",
+    content: "content_os_founder",
     eventName: "shortlink_contentos_click"
   },
   businesssorted: {

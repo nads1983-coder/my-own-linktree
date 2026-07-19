@@ -9,7 +9,7 @@ export const siteConfig = {
     {
       title: "LeadWithNadine.com",
       description: "Leadership insights, book and resources.",
-      url: "https://leadwithnadine.com",
+      url: "https://leadwithnadine.com/clarity",
       shortPath: "/go/lead",
       featured: true
     },
@@ -48,7 +48,7 @@ export const siteConfig = {
     {
       title: "getcontentos.co",
       description: "Content creation system and templates.",
-      url: "https://getcontentos.co",
+      url: "https://getcontentos.co/founder",
       shortPath: "/go/contentos",
       featured: false
     },
